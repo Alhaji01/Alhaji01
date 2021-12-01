@@ -19,7 +19,7 @@ function crossOut() {
     li.createList.toggle("dine")
 }
 
-li.addeventListener("lick",crossOut);
+li.addeventListener("click",crossOut);
 const dBtn = createListElement("button");
 dBtn.appendChild(document.createTextNode("X"));
 
@@ -30,14 +30,14 @@ function deleteListitem() {
 
 
 
-function   addListAfterKeypress(event) {
-    if (hasimput() && event.which ===13) {
+function addListAfterKeypress(event) {
+    if (hasimput() && event.which === 13) {
         createListElement();
     }
     }
- function addListAfterClick() {
+function addListAfterClick() {
     createListElement();
 }
 
 enterButton.addEventListener("click",addListAfterClick);
-input.addEventListener("keypress", addListAfterKeypress);
+input.addEventListener("keypress",addListAfterKeypress);
