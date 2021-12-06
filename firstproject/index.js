@@ -12,20 +12,20 @@ function createListElement() {
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = " ";
+    
+    
+    function crossOut() {
+        li.classList.toggle("done")
+    }
+    
+    const dBtn = document.createElement("button");
+    dBtn.appendChild(document.createTextNode("X"));
+    li.addEventListener("click",crossOut);
+    
+    function deleteListitem() {
+        li.classList.add("delete")
+    }
 }
-
-   
-function crossOut() {
-    li.createList.toggle("dine")
-}
-
-li.addeventListener("click",crossOut);
-const dBtn = createListElement("button");
-dBtn.appendChild(document.createTextNode("X"));
-
-function deleteListitem() {
-    li.classList.add("delete")
-   }
 
 
 

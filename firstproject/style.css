@@ -68,3 +68,11 @@ li {
     -o-transition: all 0.75s ease ;
 }
 
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+ }
